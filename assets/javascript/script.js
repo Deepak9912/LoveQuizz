@@ -1,33 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LoveQuizz</title>
-    <!--CSS Style link-->
-    <link rel="stylesheet" href="./assets/css/style.css">
-</head>
-<body>
-    <div class="main-container">
-        <!--question container-->
-        <div class="question-container">
-            <div id="questions"></div>
-            <div id="answer-buttons">
-                <button class="buttn">Ans1</button>
-                <button class="buttn">Ans2</button>
-                <button class="buttn">Ans3</button>
-                <button class="buttn">Ans4</button>
-            </div>
-        </div>
-        <!--question container end-->
-        <!--control buttons-->
-        <div class="control-buttons">
-            <button id="start-buttn" class="start-buttn bttn">Start</button>
-            <button id="next-buttn" class="next-buttn bttn">Next</button>
-        </div>
-    </div>
-    <!--JavaScript link-->
-    <script src="./assets/javascript/script.js"></script>
-</body>
-</html>
+let questionContainer = document.getElementById('question-container');
+let startButton = document.getElementById('start-btn');
+
+startButton.addEventListener('click', quizStart)
+
+function quizStart(){
+
+}
+
+function showQuizQuestion(){
+
+}
+
+function chooseAnswer(){
+
+}
