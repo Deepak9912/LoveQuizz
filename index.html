@@ -9,29 +9,37 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
+    <!--header begin-->
+    <header>
+        <a href="#">LoveQuizz</a>
+    </header>
+    <!--header end-->
+        <!--score area begins-->
+        <div class="score-area">
+            <p class="scores">Correct score is <span id="correct-score">0</span></p>
+            <p class="scores">Incorrect score is <span id="incorrect-score">0</span></p>
+        </div>
+        <!--score area ends-->
+    <!--main container begins-->
     <div class="main-container">
-        <!--question container-->
-        <div class="question-container">
-            <div id="questions"></div>
-            <div id="answer-buttons">
-                <button class="buttn">Ans1</button>
-                <button class="buttn">Ans2</button>
-                <button class="buttn">Ans3</button>
-                <button class="buttn">Ans4</button>
+        <div id="question-container" class="hide">
+            <div id="question">Question</div>
+            <div id="answer-buttons" class="btn-grid">
+                <button class="btn">Answer1 </button>
+                <button class="btn">Answer2 </button>
+                <button class="btn">Answer3 </button>
+                <button class="btn">Answer4 </button>
             </div>
         </div>
-        <!--question container end-->
-        <!--control buttons-->
-        <div class="control-buttons">
-            <button id="start-buttn" class="start-buttn bttn">Start</button>
-            <button id="next-buttn" class="next-buttn bttn">Next</button>
+        <br>
+        <!--control panel begins-->
+        <div class="controls">
+            <button id="start-btn" class="start-btn btn">Start</button>
+            <button id="next-btn" class="next-btn btn hide">Next</button>
         </div>
-        <!--Score-area-->
-        <div class="score-area">
-            <p class="score">Correct Score <span id="correct">0</span></p>
-            <p class="score">Incorrect Score <span id="incorrect">0</span></p>
-        </div>
+        <!--control panel ends-->
     </div>
+    <!--main container ends-->
     <!--JavaScript link-->
     <script src="./assets/javascript/script.js"></script>
 </body>
