@@ -49,16 +49,16 @@ header a {
   }
   
   .btn {
-    background: blue;
+    background: #BE3E82;
     color: #fafafa;
-    border: 1px solid blue;
+    border: 1px solid #BE3E82;
     border-radius: 5px;
     padding: 5px 10px;
     outline: none;
   }
   
   .btn:hover {
-    border-color: black;
+    box-shadow: 0 0 10px 5px black;
   }
   
   .btn.correct {
