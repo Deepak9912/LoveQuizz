@@ -1,10 +1,10 @@
-let questionContainer = document.getElementById('question-container');
-let startButton = document.getElementById('start-btn');
+let questionContainer = document.getElementById('question-container')
+let startButton = document.getElementById('start-btn')
 
 let questionElement = document.getElementById('question')
-let answerElement = document.getElementById('answer-button')
+let answerElement = document.getElementById('answer-buttons')
 
-let shuffledQuestions currentIndex
+let shuffledQuestions, currentIndex
 
 startButton.addEventListener('click', quizStart)
 
@@ -38,12 +38,10 @@ function chooseAnswer(){
 
 let questions = [
     {
-        question: "What is the capital of Ireland"
+        question: 'What is the capital of Ireland?',
         answers: [
-            { text: 'Galway', correct: false },
-            { text: 'Dublin', correct: True },
-            { text: 'Cork', correct: false },
-            { text: 'Mayo', correct: false }
+          { text: 'Dublin', correct: true },
+          { text: 'Cork', correct: false },
         ]
-    }
+      }
 ]
