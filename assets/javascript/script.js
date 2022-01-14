@@ -9,7 +9,7 @@ function quizStart(){
 
 }
 
-function showQuizQuestion(){
+function showNextQuestion(){
 
 }
 
