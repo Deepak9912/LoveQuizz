@@ -53,6 +53,8 @@ let questions = [
         answers: [
           { text: 'Dublin', correct: true },
           { text: 'Cork', correct: false },
+          { text: 'Galway', correct: false },
+          { text: 'Mayo', correct: false },
         ]
       }
 ]
