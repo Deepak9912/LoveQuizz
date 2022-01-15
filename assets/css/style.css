@@ -41,16 +41,8 @@ header a {
     box-shadow: 0 0 10px 2px;
   }
 
- .quizBox {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 40vh;
-    width: 40vw;
-  }
-
   #question {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-bottom: 2rem;
   }
   
