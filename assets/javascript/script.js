@@ -53,7 +53,27 @@ function setQuestion(question){
 }
 
 function chooseAnswer(e){
+    let selectedBtn = e.target
+    let correct = selectedBtn.dataset.correct
 
+    setClassStatus(Document.body, correct)
+    Array.from(answerElement.children).forEach(button => {
+        setClassStatus.(button, button.dataset.correct)
+    });
+}
+
+function setClassStatus(element, correct){
+    clearClassStatus(element)
+    if(correct){
+        element.classList.add('correct')
+    } else {
+        element.classList.add('incorrect')
+    }
+}
+
+function clearClassStatus(element){
+    element.classList.remove('correct')
+    element.classList.remove('incorrect')
 }
 
 let questions = [

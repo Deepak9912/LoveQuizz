@@ -24,7 +24,7 @@ header a {
     background: green;
   }
   
-  body.wrong {
+  body.incorrect {
     background: red;
   }
   
@@ -66,7 +66,7 @@ header a {
     background: green;
   }
   
-  .btn.wrong {
+  .btn.incorrect {
     background: red;
   }
   
