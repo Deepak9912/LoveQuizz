@@ -98,5 +98,93 @@ let questions = [
           { text: 'Galway', correct: false },
           { text: 'Mayo', correct: false },
         ]
-      }
+    },
+
+    {
+        question: 'When is St. Patricks day?',
+        answers: [
+          { text: '16th March', correct: false },
+          { text: '17th March', correct: true },
+          { text: '18th March', correct: false },
+          { text: '20th March', correct: false },
+        ]
+    },
+
+    {
+        question: 'Which of these county has biggest population?',
+        answers: [
+          { text: 'Tipperary', correct: false },
+          { text: 'Galway', correct: false },
+          { text: 'Cork', correct: false },
+          { text: 'Dublin', correct: true },
+        ]
+    },
+
+    {
+        question: 'Which is the smallest county in Ireland?',
+        answers: [
+          { text: 'Sligo', correct: false },
+          { text: 'Donegal', correct: false },
+          { text: 'Louth', correct: true },
+          { text: 'Meath', correct: false },
+        ]
+    },
+    {
+        question: 'What is the current population of Ireland?',
+        answers: [
+          { text: '6.6 Million', correct: true },
+          { text: '5.5 Million', correct: false },
+          { text: '6.0 Million', correct: false },
+          { text: '6.3 Million', correct: false },
+        ]
+    },
+    {
+        question: 'The book of Kells is written in which language?',
+        answers: [
+          { text: 'Irish', correct: false },
+          { text: 'Celtic', correct: false },
+          { text: 'English', correct: false },
+          { text: 'Latin', correct: true },
+        ]
+    },
+    {
+        question: 'Name the highest mountain in Ireland?',
+        answers: [
+          { text: 'Carrauntoohil', correct: true },
+          { text: 'Slieve Donard', correct: false },
+          { text: 'Mount Brandon', correct: false },
+          { text: 'Mourne mountains', correct: false },
+        ]
+    },
+    {
+        question: 'Whats the longest river in Ireland?',
+        answers: [
+          { text: 'Liffey', correct: false },
+          { text: 'Shannon', correct: true },
+          { text: 'Barrow', correct: false },
+          { text: 'Slaney', correct: false },
+        ]
+    },
+    {
+        question: 'What is Irelands biggest export?',
+        answers: [
+          { text: 'Meat', correct: false },
+          { text: 'Butter', correct: false },
+          { text: 'Malt extract', correct: true },
+          { text: 'Cheese', correct: false },
+        ]
+    },
+    {
+        question: 'What is the national animal of Ireland?',
+        answers: [
+          { text: 'Puffin', correct: false },
+          { text: 'Irish Hare', correct: true },
+          { text: 'Hedgehog', correct: false },
+          { text: 'Irish Stoat', correct: false },
+        ]
+    },
+
+
+
+
 ]
