@@ -56,10 +56,11 @@ function chooseAnswer(e){
     let selectedBtn = e.target
     let correct = selectedBtn.dataset.correct
 
-    setClassStatus(Document.body, correct)
+    setClassStatus(document.body, correct)
     Array.from(answerElement.children).forEach(button => {
-        setClassStatus.(button, button.dataset.correct)
+        setClassStatus(button, button.dataset.correct)
     });
+    nextButton.classList.remove('hide')
 }
 
 function setClassStatus(element, correct){
