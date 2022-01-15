@@ -1,5 +1,6 @@
 let questionContainer = document.getElementById('question-container')
 let startButton = document.getElementById('start-btn')
+let nextButton = document.getElementById('next-btn')
 
 let questionElement = document.getElementById('question')
 let answerElement = document.getElementById('answer-buttons')
@@ -30,13 +31,13 @@ function showNextQuestion(){
 
 function setQuestion(question){
     questionElement.innerText = question.question
-    question.answers.forEach(answer => {
+    question.answers.forEach(correctAnswer => {
         let button = document.createElement('button')
-        button.innerText = answer.correct
+        button.innerText = correctAnswer.text
         button.classList.add('btn')
 
-        if(answer.correct){
-            button.dataset.correct = answer.correct
+        if(correctAnswer.correct){
+            button.dataset.correct = correctAnswer.text
         }
         button.addEventListener('click', chooseAnswer)
         answerElement.appendChild(button)
