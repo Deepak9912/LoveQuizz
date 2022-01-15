@@ -8,6 +8,10 @@ let answerElement = document.getElementById('answer-buttons')
 let shuffledQuestions, currentIndex
 
 startButton.addEventListener('click', quizStart)
+nextButton.addEventListener('click', function(){
+    currentIndex++
+    showNextQuestion()
+})
 
 function quizStart(){
     startButton.classList.add('hide')
