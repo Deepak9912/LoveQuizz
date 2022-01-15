@@ -26,7 +26,15 @@ function quizStart(){
 }
 
 function showNextQuestion(){
+    resetQuiz()
     setQuestion(shuffledQuestions[currentIndex])
+}
+
+function resetQuiz(){
+    nextButton.classList.add('hide')
+    while(answerElement.firstChild){
+        answerElement.removeChild(answerElement.firstChild)
+    }
 }
 
 function setQuestion(question){
