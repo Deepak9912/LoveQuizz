@@ -30,9 +30,20 @@ function showNextQuestion(){
 
 function setQuestion(question){
     questionElement.innerText = question.question
+    question.answers.forEach(answer => {
+        let button = document.createElement('button')
+        button.innerText = answer.correct
+        button.classList.add('btn')
+
+        if(answer.correct){
+            button.dataset.correct = answer.correct
+        }
+        button.addEventListener('click', chooseAnswer)
+        answerElement.appendChild(button)
+    });
 }
 
-function chooseAnswer(){
+function chooseAnswer(e){
 
 }
 
