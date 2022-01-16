@@ -7,6 +7,18 @@ let answerElement = document.getElementById('answer-buttons')
 
 let shuffledQuestions, currentIndex
 
+//onclick event for the more info image
+let a;
+function display(){
+    if(a == 1){
+        document.getElementById('content').style.display = 'block';
+        return a=0;
+    } else {
+        document.getElementById('content').style.display = 'none';
+        return a=1;
+    }
+}
+
 startButton.addEventListener('click', quizStart)
 nextButton.addEventListener('click', function(){
     currentIndex++
