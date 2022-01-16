@@ -1,3 +1,7 @@
+let modal = document.getElementById('myModal');
+let btn = document.getElementById('myBtn');
+let span = document.getElementsByClassName("close")[0];
+
 let questionContainer = document.getElementById('question-container')
 let startButton = document.getElementById('start-btn')
 let nextButton = document.getElementById('next-btn')
@@ -7,15 +11,17 @@ let answerElement = document.getElementById('answer-buttons')
 
 let shuffledQuestions, currentIndex
 
-//onclick event for the more info image
-let a;
-function display(){
-    if(a == 1){
-        document.getElementById('content').style.display = 'block';
-        return a=0;
-    } else {
-        document.getElementById('content').style.display = 'none';
-        return a=1;
+btn.onclick = function(){
+    modal.style.display = "block";
+}
+
+span.onclick = function() {
+    modal.style.display = "none";
+  }
+
+window.onclick = function(e){
+    if(e.target == modal){
+        modal.style.display ='none';
     }
 }
 

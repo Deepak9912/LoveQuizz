@@ -49,24 +49,34 @@ nav ul li {
   position: relative;
 }
 
-nav ul li a {
+nav ul li a{
   text-decoration: none;
   color: black;
 }
 
-nav ul li p {
-  width: 300px;
+nav ul li .modal{
   height: 250px;
+  width: 350px;
   box-shadow: 0 0 10px 5px;
-  padding: 20px;
-  position: absolute;
-  right: 20vh;
   z-index: 1;
-  background-color: burlywood;
+  position: fixed;
+  display: none;
+  overflow: auto;
+  right: 10%;
+  top: 10%;
 }
 
-#content {
-  display: none;
+nav ul li .modal-content{
+  margin: auto;
+  padding: 20px;
+}
+
+nav ul li .close{
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  color: black;
+  cursor: pointer;
 }
 
 .score-area {
