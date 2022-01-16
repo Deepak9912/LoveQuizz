@@ -63,11 +63,7 @@ function setQuestion(question){
 
         if(correctAnswer.correct){
             button.dataset.correct = correctAnswer.text
-            incrementCorrectScore()
-        } else {
-            incrementIncorrectScore()
         }
-
         button.addEventListener('click', chooseAnswer)
         answerElement.appendChild(button) 
 

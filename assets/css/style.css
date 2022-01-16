@@ -10,6 +10,13 @@ body {
     width: 100vw;
     height: 100vh;
   }
+body.correct {
+    background: green;
+  }
+  
+body.incorrect {
+    background: red;
+  }
 
 header a {
     text-decoration: none;
@@ -20,13 +27,15 @@ header a {
     padding-left: 20px;
   }
   
-  body.correct {
-    background: green;
-  }
-  
-  body.incorrect {
-    background: red;
-  }
+  .score-area{
+    text-align: center;
+    margin-top: 8rem;
+}
+.scores{
+    display: inline-block;
+    padding: 10px 25px;
+    font-size: 20px;
+}
 
   .quiz-body{
     display: flex;
@@ -35,8 +44,7 @@ header a {
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin: 10vh auto;
-
+    margin: auto;
   }
   
   .main-container{
@@ -46,7 +54,6 @@ header a {
     border-radius: 5px;
     padding: 20px;
     box-shadow: 0 0 10px 2px;
-    margin-top: 2rem;
   }
   
     #question {
@@ -100,15 +107,7 @@ header a {
   .hide {
     display: none;
   }
-  
-  .score-area{
-      text-align: center;
-  }
-  .scores{
-      display: inline-block;
-      padding: 10px 25px;
-      font-size: 20px;
-  }
+
 
   @media screen and (max-width: 800px){
 
