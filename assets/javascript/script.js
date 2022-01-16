@@ -34,11 +34,24 @@ function showNextQuestion(){
     setQuestion(shuffledQuestions[currentIndex])
 }
 
+
 function resetQuiz(){
     nextButton.classList.add('hide')
     while(answerElement.firstChild){
         answerElement.removeChild(answerElement.firstChild)
     }
+}
+
+//score increment
+function incrementCorrectScore(){
+    let score = document.getElementById('correct-score').innerText
+    document.getElementById('correct-score').innerText = ++score
+}
+
+//score increment of wrong answer
+function incrementIncorrectScore(){
+    let score = document.getElementById('incorrect-score').innerText
+    document.getElementById('incorrect-score').innerText = ++score
 }
 
 function setQuestion(question){
@@ -50,9 +63,14 @@ function setQuestion(question){
 
         if(correctAnswer.correct){
             button.dataset.correct = correctAnswer.text
+            incrementCorrectScore()
+        } else {
+            incrementIncorrectScore()
         }
+
         button.addEventListener('click', chooseAnswer)
-        answerElement.appendChild(button)
+        answerElement.appendChild(button) 
+
     });
 }
 
@@ -70,10 +88,9 @@ function chooseAnswer(e){
     } else {
         startButton.innerText = 'Restart'
         startButton.classList.remove('hide')
-    }
-
-    
+    }  
 }
+
 
 function setClassStatus(element, correct){
     clearClassStatus(element)
