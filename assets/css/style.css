@@ -64,6 +64,7 @@ nav ul li .modal{
   overflow: auto;
   right: 10%;
   top: 10%;
+  background-color: coral;
 }
 
 nav ul li .modal-content{
