@@ -31,6 +31,7 @@ nextButton.addEventListener('click', function(){
     showNextQuestion()
 })
 
+//function to start the quizz
 function quizStart(){
     startButton.classList.add('hide')
 
@@ -47,7 +48,9 @@ function quizStart(){
 
 }
 
+// it will show next question
 function showNextQuestion(){
+    //resetQuiz will remove the deafult answers and start question with new answers
     resetQuiz()
     setQuestion(shuffledQuestions[currentIndex])
 }
@@ -72,8 +75,11 @@ function incrementIncorrectScore(){
     document.getElementById('incorrect-score').innerText = ++score
 }
 
+
 function setQuestion(question){
     questionElement.innerText = question.question
+
+    //created a foreach loop to append all the answers to the DOM
     question.answers.forEach(correctAnswer => {
         let button = document.createElement('button')
         button.innerText = correctAnswer.text
