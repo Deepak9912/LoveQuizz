@@ -97,7 +97,7 @@ function setQuestion(parameter){
 function chooseAnswer(event){
     let selectedBtn = event.target
     let correct = selectedBtn.dataset.correct
-
+    
     setClassStatus(document.body, correct)
     Array.from(answerElement.children).forEach(button => {
         setClassStatus(button, button.dataset.correct)
