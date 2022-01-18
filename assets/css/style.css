@@ -163,8 +163,27 @@ nav ul li .close{
   display: none;
 }
 
+@media screen and (max-width: 1200px) {
+  .quiz-body {
+    width: 80%;
+    height: 50vh;
+  }
+  .scores {
+    font-size: 22px;
+  }
+}
+
 
 @media screen and (max-width: 800px) {
+
+  .quiz-body {
+    width: 70%;
+    height: 70vh;
+  }
+
+  .scores {
+    font-size: 20px;
+  }
 
   .btn {
     font-size: 1rem;
@@ -192,7 +211,7 @@ nav ul li .close{
   .scores {
     display: inline-block;
     padding: 5px 10px;
-    font-size: 18px;
+    font-size: 20px;
   }
 
 }
@@ -221,5 +240,15 @@ nav ul li .close{
     display: inline-block;
     padding: 5px 10px;
     font-size: 18px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .quiz-body {
+    width: 80%;
+    height: 50vh;
+  }
+  .scores{
+    font-size: 20px;
+    margin-bottom: 20px;
   }
 }
