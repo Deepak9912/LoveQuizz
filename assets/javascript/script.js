@@ -94,8 +94,8 @@ function setQuestion(parameter){
     });
 }
 
-function chooseAnswer(e){
-    let selectedBtn = e.target
+function chooseAnswer(event){
+    let selectedBtn = event.target
     let correct = selectedBtn.dataset.correct
 
     setClassStatus(document.body, correct)
