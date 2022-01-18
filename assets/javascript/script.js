@@ -76,11 +76,11 @@ function incrementIncorrectScore(){
 }
 
 
-function setQuestion(question){
-    questionElement.innerText = question.question
+function setQuestion(parameter){
+    questionElement.innerText = parameter.question
 
     //created a foreach loop to append all the answers to the DOM
-    question.answers.forEach(correctAnswer => {
+    parameter.answers.forEach(correctAnswer => {
         let button = document.createElement('button')
         button.innerText = correctAnswer.text
         button.classList.add('btn')
