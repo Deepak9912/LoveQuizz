@@ -75,7 +75,7 @@ function incrementIncorrectScore(){
     document.getElementById('incorrect-score').innerText = ++score;
 }
 
-
+//function to assign question to the user
 function setQuestion(parameter){
     questionElement.innerText = parameter.question
 
@@ -94,6 +94,7 @@ function setQuestion(parameter){
     });
 }
 
+//this function will allow to select correct answer
 function chooseAnswer(event){
     let selectedBtn = event.target
     let correct = selectedBtn.dataset.correct
@@ -103,6 +104,12 @@ function chooseAnswer(event){
         setClassStatus(button, button.dataset.correct)
     })
 
+    if(correct){
+        incrementCorrectScore();
+    } else{
+        incrementIncorrectScore();
+    }
+
     if(shuffledQuestions.length > currentIndex + 1){
         nextButton.classList.remove('hide')
     } else {
@@ -111,13 +118,7 @@ function chooseAnswer(event){
     }  
 }
 
-function correctScore(){
-    if(dataset.correct){
-        incrementCorrectScore();
-    } else{
-        incrementIncorrectScore();
-    }
-}
+
 
 
 function setClassStatus(element, correct){
