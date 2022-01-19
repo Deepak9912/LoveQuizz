@@ -2,12 +2,12 @@ let modal = document.getElementById('myModal');
 let btn = document.getElementById('myBtn');
 let span = document.getElementsByClassName("close")[0];
 
-let questionContainer = document.getElementById('question-container')
-let startButton = document.getElementById('start-btn')
-let nextButton = document.getElementById('next-btn')
+let questionContainer = document.getElementById('question-container');
+let startButton = document.getElementById('start-btn');
+let nextButton = document.getElementById('next-btn');
 
-let questionElement = document.getElementById('question')
-let answerElement = document.getElementById('answer-buttons')
+let questionElement = document.getElementById('question');
+let answerElement = document.getElementById('answer-buttons');
 
 let shuffledQuestions, currentIndex
 
@@ -33,15 +33,15 @@ nextButton.addEventListener('click', function(){
 
 //function to start the quizz
 function quizStart(){
-    startButton.classList.add('hide')
+    startButton.classList.add('hide');
 
     //to shuffle the questions
-    shuffledQuestions = questions.sort(() => Math.random() - .5)
+    shuffledQuestions = questions.sort(() => Math.random() - .5);
 
     // current index set at 0
     currentIndex = 0
 
-    questionContainer.classList.remove('hide')
+    questionContainer.classList.remove('hide');
 
     //show next question
     showNextQuestion()
@@ -65,14 +65,14 @@ function resetQuiz(){
 
 //score increment
 function incrementCorrectScore(){
-    let score = document.getElementById('correct-score').innerText
-    document.getElementById('correct-score').innerText = ++score
+    let score = document.getElementById('correct-score').innerText;
+    document.getElementById('correct-score').innerText = ++score;
 }
 
 //score increment of wrong answer
 function incrementIncorrectScore(){
-    let score = document.getElementById('incorrect-score').innerText
-    document.getElementById('incorrect-score').innerText = ++score
+    let score = document.getElementById('incorrect-score').innerText;
+    document.getElementById('incorrect-score').innerText = ++score;
 }
 
 
@@ -109,6 +109,14 @@ function chooseAnswer(event){
         startButton.innerText = 'Restart'
         startButton.classList.remove('hide')
     }  
+}
+
+function correctScore(){
+    if(dataset.correct){
+        incrementCorrectScore();
+    } else{
+        incrementIncorrectScore();
+    }
 }
 
 
