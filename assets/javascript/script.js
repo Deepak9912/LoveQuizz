@@ -110,6 +110,11 @@ function chooseAnswer(event){
         incrementIncorrectScore();
     }
 
+    hideStart();
+}
+
+//this function helps to display restart button at the end of the quiz
+function hideStart(){
     if(shuffledQuestions.length > currentIndex + 1){
         nextButton.classList.remove('hide')
     } else {
@@ -117,8 +122,6 @@ function chooseAnswer(event){
         startButton.classList.remove('hide')
     }  
 }
-
-
 
 
 function setClassStatus(element, correct){
