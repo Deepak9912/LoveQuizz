@@ -9,57 +9,52 @@ let nextButton = document.getElementById('next-btn');
 let questionElement = document.getElementById('question');
 let answerElement = document.getElementById('answer-buttons');
 
-let shuffledQuestions, currentIndex
+let shuffledQuestions, currentIndex;
 
 btn.onclick = function(){
     modal.style.display = "block";
-}
+};
 
 span.onclick = function() {
     modal.style.display = "none";
-  }
+  };
 
 window.onclick = function(e){
     if(e.target == modal){
         modal.style.display ='none';
     }
-}
+};
 
-startButton.addEventListener('click', quizStart)
+startButton.addEventListener('click', quizStart);
 nextButton.addEventListener('click', function(){
-    currentIndex++
-    showNextQuestion()
-})
+    currentIndex++;
+    showNextQuestion();
+});
 
 //function to start the quizz
 function quizStart(){
     startButton.classList.add('hide');
-
     //to shuffle the questions
     shuffledQuestions = questions.sort(() => Math.random() - .5);
-
     // current index set at 0
-    currentIndex = 0
-
+    currentIndex = 0;
     questionContainer.classList.remove('hide');
-
     //show next question
-    showNextQuestion()
-
+    showNextQuestion();
 }
 
 // it will show next question
 function showNextQuestion(){
     //resetQuiz will remove the deafult answers and start question with new answers
-    resetQuiz()
-    setQuestion(shuffledQuestions[currentIndex])
+    resetQuiz();
+    setQuestion(shuffledQuestions[currentIndex]);
 }
 
 
 function resetQuiz(){
-    nextButton.classList.add('hide')
+    nextButton.classList.add('hide');
     while(answerElement.firstChild){
-        answerElement.removeChild(answerElement.firstChild)
+        answerElement.removeChild(answerElement.firstChild);
     }
 }
 
@@ -77,32 +72,32 @@ function incrementIncorrectScore(){
 
 //function to assign question to the user
 function setQuestion(parameter){
-    questionElement.innerText = parameter.question
+    questionElement.innerText = parameter.question;
 
     //created a foreach loop to append all the answers to the DOM
     parameter.answers.forEach(correctAnswer => {
-        let button = document.createElement('button')
-        button.innerText = correctAnswer.text
-        button.classList.add('btn')
+        let button = document.createElement('button');
+        button.innerText = correctAnswer.text;
+        button.classList.add('btn');
 
         if(correctAnswer.correct){
-            button.dataset.correct = correctAnswer.text
+            button.dataset.correct = correctAnswer.text;
         }
-        button.addEventListener('click', chooseAnswer)
-        answerElement.appendChild(button) 
+        button.addEventListener('click', chooseAnswer);
+        answerElement.appendChild(button);
 
     });
 }
 
 //this function will allow to select correct answer
 function chooseAnswer(event){
-    let selectedBtn = event.target
-    let correct = selectedBtn.dataset.correct
+    let selectedBtn = event.target;
+    let correct = selectedBtn.dataset.correct;
     
-    setClassStatus(document.body, correct)
+    setClassStatus(document.body, correct);
     Array.from(answerElement.children).forEach(button => {
-        setClassStatus(button, button.dataset.correct)
-    })
+        setClassStatus(button, button.dataset.correct);
+    });
 
     if(correct){
         incrementCorrectScore();
@@ -116,26 +111,26 @@ function chooseAnswer(event){
 //this function helps to display restart button at the end of the quiz
 function hideStart(){
     if(shuffledQuestions.length > currentIndex + 1){
-        nextButton.classList.remove('hide')
+        nextButton.classList.remove('hide');
     } else {
-        startButton.innerText = 'Restart'
-        startButton.classList.remove('hide')
+        startButton.innerText = 'Restart';
+        startButton.classList.remove('hide');
     }  
 }
 
 
 function setClassStatus(element, correct){
-    clearClassStatus(element)
+    clearClassStatus(element);
     if(correct){
-        element.classList.add('correct')
+        element.classList.add('correct');
     } else {
-        element.classList.add('incorrect')
+        element.classList.add('incorrect');
     }
 }
 
 function clearClassStatus(element){
-    element.classList.remove('correct')
-    element.classList.remove('incorrect')
+    element.classList.remove('correct');
+    element.classList.remove('incorrect');
 }
 
 let questions = [
@@ -233,7 +228,4 @@ let questions = [
         ]
     },
 
-
-
-
-]
+];

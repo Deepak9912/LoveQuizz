@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <!--CSS Style link-->
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body>
     <!--header begin-->
     <header id="dropdown">
@@ -16,15 +18,18 @@
             <ul>
                 <li><a href="#" id="myBtn">More Info</a>
                     <!--modal-->
-                     <div id="myModal" class="modal">
-                      <!--modal content-->
+                    <div id="myModal" class="modal">
+                        <!--modal content-->
                         <div class="modal-content">
                             <span class="close">&times;</span>
-                             <p>Welcome to online quiz game. There are total 10 questions in this game. Please click start to begin the game. Every time you click on correct answer, the screen will turn green and for every incorrect score the screen will turn red. You can also see the score on the screen.</p>
+                            <p>Welcome to online quiz game. There are total 10 questions in this game. Please click
+                                start to begin the game. Every time you click on correct answer, the screen will turn
+                                green and for every incorrect score the screen will turn red. You can also see the score
+                                on the screen.</p>
                         </div>
-                      <!--modal content ends-->
-                       </div>
-                   <!--Modal ends-->
+                        <!--modal content ends-->
+                    </div>
+                    <!--Modal ends-->
                 </li>
                 <li><a href="#">Feedback</a>
                 </li>
@@ -32,35 +37,36 @@
         </nav>
     </header>
     <!--header end-->
-        <!--score area begins-->
-        <div class="score-area">
-            <p class="scores">Correct score is <span id="correct-score">0</span></p>
-            <p class="scores">Incorrect score is <span id="incorrect-score">0</span></p>
-        </div>
-        <!--score area ends-->
+    <!--score area begins-->
+    <div class="score-area">
+        <p class="scores">Correct score is <span id="correct-score">0</span></p>
+        <p class="scores">Incorrect score is <span id="incorrect-score">0</span></p>
+    </div>
+    <!--score area ends-->
     <!--main container begins-->
     <div class="quiz-body">
-    <div class="main-container">
-        <!--question area begins-->
-        <div id="question-container" class="hide">
-            <div id="question">Question</div>
-            <div id="answer-buttons" class="btn-grid">
-                <button class="btn">Answer one </button>
-                <button class="btn">Answer two </button>
-                <button class="btn">Answer three </button>
-                <button class="btn">Answer four </button>
+        <div class="main-container">
+            <!--question area begins-->
+            <div id="question-container" class="hide">
+                <div id="question">Question</div>
+                <div id="answer-buttons" class="btn-grid">
+                    <button class="btn">Answer one </button>
+                    <button class="btn">Answer two </button>
+                    <button class="btn">Answer three </button>
+                    <button class="btn">Answer four </button>
+                </div>
             </div>
+            <!--control panel begins-->
+            <div class="controls">
+                <button id="start-btn" class="start-btn btn">Start</button>
+                <button id="next-btn" class="next-btn btn hide">Next</button>
+            </div>
+            <!--control panel ends-->
         </div>
-         <!--control panel begins-->
-         <div class="controls">
-            <button id="start-btn" class="start-btn btn">Start</button>
-            <button id="next-btn" class="next-btn btn hide">Next</button>
-        </div>
-         <!--control panel ends-->
     </div>
-</div>
     <!--main container ends-->
     <!--JavaScript link-->
     <script src="./assets/javascript/script.js"></script>
 </body>
+
 </html>
