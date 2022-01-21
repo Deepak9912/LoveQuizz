@@ -12,7 +12,7 @@ body {
 }
 
 body.correct {
-  background: green;
+  background: #0c80009e;
 }
 
 body.incorrect {
@@ -21,11 +21,19 @@ body.incorrect {
 
 nav {
   height: 60px;
+  line-height: 60px;
+  display: flex;
+  justify-content: space-between;
 }
 
+
 #title {
-  padding: 5px 10px;
+text-decoration: none;
+}
+
+#title h1{
   font-size: 60px;
+  padding: 5px 10px;
   text-decoration: none;
   color: black;
   margin-left: 20px;
@@ -41,9 +49,10 @@ nav ul li {
   list-style: none;
   display: inline-block;
   padding: 0 20px;
-  font-size: 20px;
+  font-size: 25px;
   margin-top: 20px;
   position: relative;
+  font-weight: 500;
 }
 
 nav ul li a{
@@ -136,7 +145,7 @@ nav ul li .close{
 }
 
 .btn.correct {
-  background: green;
+  background: #0c80009e;
 }
 
 .btn.incorrect {
