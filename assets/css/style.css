@@ -19,75 +19,64 @@ body.incorrect {
   background: red;
 }
 
-header{
-  width: 100%;
+nav {
   height: 60px;
-  line-height: 60px;
-  display: flex;
-  justify-content: space-between;
 }
 
-#logo{
-  font-size: 40px;
-  font-weight: 700;
-  padding: 10px 20px;
-}
-
-#logo a{
+#title {
+  padding: 5px 10px;
+  font-size: 60px;
   text-decoration: none;
   color: black;
+  margin-left: 20px;
+  font-weight: 800;
 }
 
-.tags{
-  padding: 0.5rem 1rem;
-  cursor: pointer;
+nav ul {
+  float: right;
+  margin-right: 30px;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 0 20px;
   font-size: 20px;
+  margin-top: 20px;
+  position: relative;
 }
 
-#dropdown-container a{
+nav ul li a{
   text-decoration: none;
-  margin-right: 20px;
   color: black;
 }
 
-.tag:active {
-  margin-left: 2px;
-}
-
-.close-modal {
-  font-size: 1.5rem;
-}
-
-.modal {
-  width: 450px;
+nav ul li .modal{
+  height: 250px;
+  width: 350px;
+  box-shadow: 0 0 10px 5px;
+  z-index: 1;
   position: fixed;
-  top: -50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  transition: top 0.3s ease-in-out;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  z-index: 2;
-  background-color: #fff;
+  display: none;
+  overflow: auto;
+  right: 10%;
+  top: 10%;
+  background-color: coral;
+}
+
+nav ul li .modal-content{
+  margin: auto;
+  padding: 20px;
+}
+
+nav ul li .close{
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
   color: black;
+  cursor: pointer;
 }
 
-.modal.active {
-  top: 15%;
-}
-
-.modal .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid #ccc;
-  padding: 0.5rem;
-  background-color: rgba(0, 0, 0, 0.05);
-}
-
-.modal .body {
-  padding: 0.75rem;
-}
 
 .score-area {
   text-align: center;

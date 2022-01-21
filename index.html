@@ -11,41 +11,25 @@
 <body>
     <!--header begin-->
     <header id="dropdown">
-        <div id="logo">
+        <nav>
             <a href="#" id="title">LoveQuizz</a>
-        </div>
-        <div id="dropdown-header">
-            <div id="dropdown-container">
-                <a href="#" class="tags" data-target="#modal1">More Info</a>
-                <a href="#" class="tags" data-target="#modal2">Feedback</a>
-            </div>
-            <!--modal 1-->
-            <div class="modal" id="modal1">
-                <div class="header">
-                    <div class="title">First Modal</div>
-                    <span class="tags close-modal">&times;</span>
-                </div>
-                <div class="body">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere ea
-                    officia consectetur. Laborum, dolor? Assumenda quo corrupti eveniet
-                    velit fugit fugiat odit, dolorum labore obcaecati quia. Commodi
-                    assumenda sed maxime!
-                </div>
-            </div>
-            <!--modal 2-->
-            <div class="modal" id="modal2">
-                <div class="header">
-                    <div class="title">Second Modal</div>
-                    <span class="tags close-modal">&times;</span>
-                </div>
-                <div class="body">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere ea
-                    officia consectetur. Laborum, dolor? Assumenda quo corrupti eveniet
-                    velit fugit fugiat odit, dolorum labore obcaecati quia. Commodi
-                    assumenda sed maxime!
-                </div>
-            </div>
-        </div>
+            <ul>
+                <li><a href="#" id="myBtn">More Info</a>
+                    <!--modal-->
+                     <div id="myModal" class="modal">
+                      <!--modal content-->
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                             <p>Welcome to online quiz game. There are total 10 questions in this game. Please click start to begin the game. Every time you click on correct answer, the screen will turn green and for every incorrect score the screen will turn red. You can also see the score on the screen.</p>
+                        </div>
+                      <!--modal content ends-->
+                       </div>
+                   <!--Modal ends-->
+                </li>
+                <li><a href="#">Feedback</a>
+                </li>
+            </ul>
+        </nav>
     </header>
     <!--header end-->
         <!--score area begins-->
