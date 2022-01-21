@@ -1,5 +1,5 @@
-let modal = document.getElementById('myModal');
-let btn = document.getElementById('myBtn');
+let modal = document.querySelectorAll('.modal');
+let tags = document.querySelectorAll('.tags');
 let span = document.getElementsByClassName("close")[0];
 
 let questionContainer = document.getElementById('question-container');
@@ -11,19 +11,7 @@ let answerElement = document.getElementById('answer-buttons');
 
 let shuffledQuestions, currentIndex
 
-btn.onclick = function(){
-    modal.style.display = "block";
-}
 
-span.onclick = function() {
-    modal.style.display = "none";
-  }
-
-window.onclick = function(e){
-    if(e.target == modal){
-        modal.style.display ='none';
-    }
-}
 
 startButton.addEventListener('click', quizStart)
 nextButton.addEventListener('click', function(){
