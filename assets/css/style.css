@@ -88,12 +88,12 @@ nav ul li .close{
 
 .score-area {
   text-align: center;
-  margin-top: 8rem;
+  margin-top: 5rem;
 }
 
 .scores {
   display: inline-block;
-  padding: 10px 25px;
+  padding: 10px 20px;
   font-size: 20px;
 }
 
@@ -169,10 +169,32 @@ nav ul li .close{
   display: none;
 }
 
+footer{
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+footer ul{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+  font-size: 2rem;
+}
+
+footer ul li{
+  list-style: none;
+}
+footer ul li a{
+  color: black;
+}
+
 @media screen and (max-width: 1200px) {
   .quiz-body {
     width: 80%;
     height: 50vh;
+    margin-top: 10%;
   }
 
   .btn {
