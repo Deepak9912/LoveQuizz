@@ -27,10 +27,10 @@ nav {
 
 
 #title {
-text-decoration: none;
+  text-decoration: none;
 }
 
-#title h1{
+#title h1 {
   font-size: 60px;
   padding: 5px 10px;
   text-decoration: none;
@@ -54,12 +54,12 @@ nav ul li {
   font-weight: 500;
 }
 
-nav ul li a{
+nav ul li a {
   text-decoration: none;
   color: black;
 }
 
-nav ul li .modal{
+nav ul li .modal {
   height: 350px;
   width: 350px;
   box-shadow: 0 0 10px 5px;
@@ -74,12 +74,12 @@ nav ul li .modal{
   line-height: 30px;
 }
 
-nav ul li .modal-content{
+nav ul li .modal-content {
   margin: auto;
   padding: 20px;
 }
 
-nav ul li .close{
+nav ul li .close {
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -171,24 +171,25 @@ nav ul li .close{
   display: none;
 }
 
-footer{
+footer {
   width: 100%;
   height: 100px;
   text-align: center;
   margin-top: 8rem;
 }
 
-footer ul{
+footer ul {
   display: flex;
   justify-content: space-evenly;
   padding: 20px;
   font-size: 2rem;
 }
 
-footer ul li{
+footer ul li {
   list-style: none;
 }
-footer ul li a{
+
+footer ul li a {
   color: black;
 }
 
@@ -199,7 +200,7 @@ footer ul li a{
   margin: 10vh auto;
 }
 
-#form h2{
+#form h2 {
   text-align: center;
 }
 
@@ -311,10 +312,10 @@ input[type="submit"]:active {
   }
 
   nav ul {
-    margin-top: 20px;
+    margin: 20px 10px;
     text-align: center;
   }
-  
+
   .btn {
     font-size: 22px;
     border-radius: 5px;
@@ -342,11 +343,12 @@ input[type="submit"]:active {
   #form {
     height: 60%;
     width: 80%;
-    margin-top: 3rem;
+    margin-top: 4rem;
     padding: 20px;
   }
-  
+
 }
+
 @media screen and (max-width: 500px) {
   .quiz-body {
     width: 90%;
@@ -359,8 +361,8 @@ input[type="submit"]:active {
     padding: 5px 10px;
   }
 
-  .scores{
+  .scores {
     font-size: 20px;
-    margin-bottom: 20px;
+    margin-top: 3rem;
   }
 }
