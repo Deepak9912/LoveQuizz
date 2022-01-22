@@ -190,6 +190,21 @@ footer ul li a{
   color: black;
 }
 
+/* feedback page*/
+#form-area{
+  width: 50vw;
+  height: 50vh;
+  margin: 10vh auto;
+  box-shadow: 0 0 10px 5px;
+  padding: 4% 2%;
+  position: relative;
+}
+
+form{
+  margin: 0 auto;
+}
+
+/*media query section */
 @media screen and (max-width: 1200px) {
   .quiz-body {
     width: 80%;
