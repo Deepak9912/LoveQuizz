@@ -305,6 +305,16 @@ input[type="submit"]:active {
 
 @media screen and (max-width: 620px) {
 
+  nav {
+    height: 60px;
+    display: block;
+  }
+
+  nav ul {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
   .btn {
     font-size: 22px;
     border-radius: 5px;
