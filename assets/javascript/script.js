@@ -11,14 +11,17 @@ let answerElement = document.getElementById('answer-buttons');
 
 let shuffledQuestions, currentIndex;
 
+/**modal window on the home page*/
 btn.onclick = function(){
     modal.style.display = "block";
 };
 
+/**modal window on the home page*/
 span.onclick = function() {
     modal.style.display = "none";
   };
 
+  /**modal window on the home page*/
 window.onclick = function(e){
     if(e.target == modal){
         modal.style.display ='none';
@@ -31,7 +34,7 @@ nextButton.addEventListener('click', function(){
     showNextQuestion();
 });
 
-//function to start the quizz
+/**to start the online quiz*/
 function quizStart(){
     startButton.classList.add('hide');
     //to shuffle the questions
@@ -43,14 +46,15 @@ function quizStart(){
     showNextQuestion();
 }
 
-// it will show next question
+
+/**function to show the next question */
 function showNextQuestion(){
     //resetQuiz will remove the deafult answers and start question with new answers
     resetQuiz();
     setQuestion(shuffledQuestions[currentIndex]);
 }
 
-
+/**function to reset the quiz */
 function resetQuiz(){
     nextButton.classList.add('hide');
     while(answerElement.firstChild){
@@ -58,19 +62,19 @@ function resetQuiz(){
     }
 }
 
-//score increment
+/**score increment for correct answer */
 function incrementCorrectScore(){
     let score = document.getElementById('correct-score').innerText;
     document.getElementById('correct-score').innerText = ++score;
 }
 
-//score increment of wrong answer
+/**score increment of wrong answer */
 function incrementIncorrectScore(){
     let score = document.getElementById('incorrect-score').innerText;
     document.getElementById('incorrect-score').innerText = ++score;
 }
 
-//function to assign question to the user
+/**function to assign question to the user */
 function setQuestion(parameter){
     questionElement.innerText = parameter.question;
 
@@ -89,7 +93,7 @@ function setQuestion(parameter){
     });
 }
 
-//this function will allow to select correct answer
+/**this function will allow to select correct answer */
 function chooseAnswer(event){
     let selectedBtn = event.target;
     let correct = selectedBtn.dataset.correct;
@@ -108,7 +112,7 @@ function chooseAnswer(event){
     hideStart();
 }
 
-//this function helps to display restart button at the end of the quiz
+/** this function helps to display restart button at the end of the quiz */
 function hideStart(){
     if(shuffledQuestions.length > currentIndex + 1){
         nextButton.classList.remove('hide');
@@ -118,7 +122,7 @@ function hideStart(){
     }  
 }
 
-
+/** function to check correct answer */
 function setClassStatus(element, correct){
     clearClassStatus(element);
     if(correct){
@@ -133,6 +137,7 @@ function clearClassStatus(element){
     element.classList.remove('incorrect');
 }
 
+/** this variable holds the questions for the quiz */
 let questions = [
     {
         question: 'What is the capital of Ireland?',
