@@ -93,3 +93,4 @@ The project was deployed through GitHub by following the below steps:
 1. Used YouTube tutorials for ideas on creating online quiz [here](https://www.youtube.com/watch?v=49pYIMygIcU&t=191s)
 2. Modal content was added using [W3Schools.com](https://www.w3schools.com/w3css/w3css_modal.asp)
 3. Script.js, line 43 code to shuffle the questions was adopted from [Stack OverFlow](https://stackoverflow.com/)
+4. Script.js, functions on line 69 and 75 were adopted using previous LoveMath project through [Code Institute](https://codeinstitute.net/ie/)
