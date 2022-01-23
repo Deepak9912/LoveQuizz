@@ -11,6 +11,7 @@ let answerElement = document.getElementById('answer-buttons');
 
 let shuffledQuestions, currentIndex;
 
+/**learnt to create modal from https://www.w3schools.com/w3css/w3css_modal.asp */
 /**modal window on the home page*/
 btn.onclick = function(){
     modal.style.display = "block";
@@ -38,6 +39,7 @@ nextButton.addEventListener('click', function(){
 function quizStart(){
     startButton.classList.add('hide');
     //to shuffle the questions
+    /**used the below code using https://stackoverflow.com/questions/42661936/whats-the-difference-between-math-random-0-5-and-math-random-0-5 */
     shuffledQuestions = questions.sort(() => Math.random() - .5);
     // current index set at 0
     currentIndex = 0;
@@ -62,6 +64,7 @@ function resetQuiz(){
     }
 }
 
+/** used the below score element from love math project from code institute*/
 /**score increment for correct answer */
 function incrementCorrectScore(){
     let score = document.getElementById('correct-score').innerText;
@@ -75,11 +78,11 @@ function incrementIncorrectScore(){
 }
 
 /**function to assign question to the user */
-function setQuestion(parameter){
-    questionElement.innerText = parameter.question;
+function setQuestion(questionParameter){
+    questionElement.innerText = questionParameter.question;
 
     //created a foreach loop to append all the answers to the DOM
-    parameter.answers.forEach(correctAnswer => {
+    questionParameter.answers.forEach(correctAnswer => {
         let button = document.createElement('button');
         button.innerText = correctAnswer.text;
         button.classList.add('btn');
