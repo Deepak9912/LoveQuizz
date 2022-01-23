@@ -64,3 +64,14 @@ JS Hint
 4. The website was viewed on a variety of devices such as Desktop, Laptop, iPhone6, Samsung and Huwawei phone.
 5. A large amount of testing was completed to ensure that all pages were linking correctly.
 6. Friends and family members were asked to review the site and content to point out any bugs and/or user experience issues.
+
+## Deployment
+The project was deployed through GitHub by following the below steps:
+1. Log in to GitHub and locate Your repositories through the dropdown menu at the top right of the main screen.
+2. Once on the "Your repositries" page, locate the project name and select.
+3. On the project page click "Settings" on the tack bar.
+4. Scroll through the Settings page until the "GitHub Pages" section appears.
+5. Within the "GitHub Pages" section, click the link to Source
+6. Under "Source", click the dropdown menu and choose "None" and then select "Master Branch".
+7. The page will automatically refresh and retunrs the user to the "Settings" page.
+8. Scroll back down through the "Settings" page to locate the now published site link in the "GitHub Pages" section.
