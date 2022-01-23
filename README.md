@@ -50,3 +50,9 @@ LightHouse
 ![LightHouse](https://user-images.githubusercontent.com/93731898/150697744-1337031b-2417-459c-bbb9-cab7d615e9fd.PNG)
 
 JS Hint
+
+
+## Accessibility
+1. There are no images on the site.
+2. Colours have a stark contrast between background and foreground.
+3. All the links open on different pages.
