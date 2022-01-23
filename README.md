@@ -13,5 +13,7 @@ The top right hand side navbar has more info navigation bar, which user can clic
 ![modal](https://user-images.githubusercontent.com/93731898/150696266-5035a31a-73ed-4c49-b098-6eca6cf54152.PNG)
 
 
-As per the introduction, when user clicks on correct answer, the screen will turn green and the score gets updated in the score area and vice versa for inforrect answer.![incorrect answer](https://user-images.githubusercontent.com/93731898/150696270-4f025ec0-7b33-43b6-8a57-00141dce3d3d.PNG)
+As per the introduction, when user clicks on correct answer, the screen will turn green and the score gets updated in the score area and vice versa for inforrect answer.
+![incorrect answer](https://user-images.githubusercontent.com/93731898/150696270-4f025ec0-7b33-43b6-8a57-00141dce3d3d.PNG)
+
 ![correct answer](https://user-images.githubusercontent.com/93731898/150696271-bea0e06a-9a43-41a2-a346-bf820b1871d8.PNG)
