@@ -56,3 +56,11 @@ JS Hint
 1. There are no images on the site.
 2. Colours have a stark contrast between background and foreground.
 3. All the links open on different pages.
+
+## Testing
+1. Ran the Wave web assessment tool to fix any structural or contrast error.
+2. Developer tool applied to review website on different screens.
+3. The Website was tested on Google Chrome, Internet Explorer and Mozilla firefox.
+4. The website was viewed on a variety of devices such as Desktop, Laptop, iPhone6, Samsung and Huwawei phone.
+5. A large amount of testing was completed to ensure that all pages were linking correctly.
+6. Friends and family members were asked to review the site and content to point out any bugs and/or user experience issues.
