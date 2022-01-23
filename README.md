@@ -91,3 +91,5 @@ The project was deployed through GitHub by following the below steps:
 
 ## Credits
 1. Used YouTube tutorials for ideas on creating online quiz [here](https://www.youtube.com/watch?v=49pYIMygIcU&t=191s)
+2. Modal content was added using [W3Schools.com](https://www.w3schools.com/w3css/w3css_modal.asp)
+3. Script.js, line 43 code to shuffle the questions was adopted from [Stack OverFlow](https://stackoverflow.com/)
