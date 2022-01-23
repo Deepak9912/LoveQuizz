@@ -26,3 +26,11 @@ As per the introduction, when user clicks on correct answer, the screen will tur
 1. All external links open in a new tab.
 2. HTML code is structured with sematic markup.
 3. The online quiz is responsive on different screens.
+
+## Design
+Visual Design
+1. I have opted for the plain screen design, there is no background image.
+2. Used border radius property in CSS to give the square boxes a rounded edges.
+3. Used different sections in to define each section precisely.
+
+User Experience Design
