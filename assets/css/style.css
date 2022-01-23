@@ -259,6 +259,10 @@ input[type="submit"]:active {
   .scores {
     font-size: 22px;
   }
+
+  footer{
+    height: 30px;
+  }
 }
 
 
