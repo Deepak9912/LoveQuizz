@@ -9,8 +9,12 @@ Click here to visit the [LoveQuizz](https://deepak9912.github.io/LoveQuizz/) web
 
 ## Features
 
-The top right hand side navbar has more info navigation bar, which user can click to get more information about the quiz. Once user has read the instruction, user needs to click on x to close the window. There is a feedback section next to user-info, which user can use to give a feedback.
+The top right hand side navbar has more info navigation bar, which user can click to get more information about the quiz. Once user has read the instruction, user needs to click on x to close the window. 
 ![modal](https://user-images.githubusercontent.com/93731898/150696266-5035a31a-73ed-4c49-b098-6eca6cf54152.PNG)
+
+There is a feedback section next to user-info, which user can use to give a feedback.
+![feedback](https://user-images.githubusercontent.com/93731898/150696442-897941ca-e41c-4a65-88fd-26d33252fa24.PNG)
+
 
 As per the introduction, when user clicks on correct answer, the screen will turn green and the score gets updated in the score area and vice versa for inforrect answer.
 
