@@ -19,6 +19,10 @@ body.incorrect {
   background: red;
 }
 
+h3{
+  display: none;
+}
+
 nav {
   height: 60px;
   display: flex;
