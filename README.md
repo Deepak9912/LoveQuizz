@@ -46,4 +46,7 @@ HTML5
 CSS3
 ![css](https://user-images.githubusercontent.com/93731898/150697653-a851939c-33b8-4823-a93d-9e472fcfff45.PNG)
 
+LightHouse
+![LightHouse](https://user-images.githubusercontent.com/93731898/150697744-1337031b-2417-459c-bbb9-cab7d615e9fd.PNG)
+
 JS Hint
