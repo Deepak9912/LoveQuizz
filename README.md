@@ -7,3 +7,8 @@ The goal of the project is to create an online quiz which can interest the audie
 Click here to visit the [LoveQuizz](https://deepak9912.github.io/LoveQuizz/) webpage.
 
 ## Features
+
+The top right hand side navbar has more info navigation bar, which user can click to get more information about the quiz. Once user has read the instruction, user needs to click on x to close the window. There is a feedback section next to user-info, which user can use to give a feedback.
+
+
+As per the introduction, when user clicks on correct answer, the screen will turn green and the score gets updated in the score area and vice versa for inforrect answer.
