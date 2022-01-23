@@ -88,3 +88,6 @@ The project was deployed through GitHub by following the below steps:
 9. JSHint
 10. W3 HTML Validator
 11. W3 CSS Validator
+
+## Credits
+1. Used YouTube tutorials for ideas on creating online quiz [here](https://www.youtube.com/watch?v=49pYIMygIcU&t=191s)
