@@ -36,3 +36,12 @@ Visual Design
 User Experience Design
 1. The quiz uses established conventions for interaction. Users can click on the top right hand side link to read rules, or simply begin bu clicking on start button.
 2. The score gets updated after every answer selected with appropriate screen color, i.e green for correct answer and red for wrong answer.
+
+## Validation checks
+The webiste was tested on W3C to validate HTML AND CSS code structure.
+
+HTML5
+
+CSS3
+
+JS Hint
