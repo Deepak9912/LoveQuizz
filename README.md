@@ -75,3 +75,16 @@ The project was deployed through GitHub by following the below steps:
 6. Under "Source", click the dropdown menu and choose "None" and then select "Master Branch".
 7. The page will automatically refresh and retunrs the user to the "Settings" page.
 8. Scroll back down through the "Settings" page to locate the now published site link in the "GitHub Pages" section.
+
+## Technologies Used
+1. Javascrip
+2. CSS
+3. HTML
+4. GitHub
+5. GitPod
+6. GitHub Pages
+7. Firefox developer tools
+8. Chrome developer tools
+9. JSHint
+10. W3 HTML Validator
+11. W3 CSS Validator
