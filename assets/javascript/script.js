@@ -122,6 +122,7 @@ function hideStart(){
     } else {
         startButton.innerText = 'Restart';
         startButton.classList.remove('hide');
+        document.body.textContent = "Game Over!, please refresh the page to start again.";
     }  
 }
 
