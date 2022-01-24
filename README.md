@@ -39,6 +39,17 @@ User Experience Design
 1. The quiz uses established conventions for interaction. Users can click on the top right hand side link to read rules, or simply begin bu clicking on start button.
 2. The score gets updated after every answer selected with appropriate screen color, i.e green for correct answer and red for wrong answer.
 
+## Testing
+
+### Issues and Bugs found & fixed
+
+1. Creating multiple modals
+While creating two modals on the home screen for more info and feedback, i was not able to add the second modal window for feedback. I tried to use querySelectorAll to target both tha 'modal' and 'btn' but it did not work. Therefore i created a second page for feedback section using HTML and CSS and added a form for users, so that users can give feedback.
+
+2. Restart the quiz
+I wanted to restart the quiz on the home screen and tried to update score 0 variable but it didn't seem to work when i restarted the quiz, therefore i added document.body.textContent to the restart function. Now when the user restarts the function, a new window opens up with a text message End of quizz!, please refresh the page to start again.
+
+
 ## Validation checks
 The webiste was tested on W3C to validate HTML AND CSS code structure.
 
