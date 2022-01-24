@@ -11,7 +11,7 @@ let answerElement = document.getElementById('answer-buttons');
 
 let shuffledQuestions, currentIndex;
 
-let score = 0;
+
 /**learnt to create modal from https://www.w3schools.com/w3css/w3css_modal.asp */
 /**modal window on the home page*/
 btn.onclick = function(){
@@ -38,7 +38,6 @@ nextButton.addEventListener('click', function(){
 
 /**to start the online quiz*/
 function quizStart(){
-    score = 0;
     startButton.classList.add('hide');
     //to shuffle the questions
     /**used the below code using https://stackoverflow.com/questions/42661936/whats-the-difference-between-math-random-0-5-and-math-random-0-5 */
@@ -68,7 +67,16 @@ function resetQuiz(){
 
 /** used the below score element from love math project from code institute*/
 /**score increment for correct answer */
+function incrementCorrectScore(){
+    let score = document.getElementById('correct-score').innerText;
+    document.getElementById('correct-score').innerText = ++score;
+}
 
+/**score increment of wrong answer */
+function incrementIncorrectScore(){
+    let score = document.getElementById('incorrect-score').innerText;
+    document.getElementById('incorrect-score').innerText = ++score;
+}
 
 /**function to assign question to the user */
 function setQuestion(questionParameter){
@@ -100,9 +108,9 @@ function chooseAnswer(event){
     });
 
     if(correct){
-        score++;
+        incrementCorrectScore();
     } else{
-        score--;
+        incrementIncorrectScore();
     }
 
     hideStart();
@@ -115,7 +123,7 @@ function hideStart(){
     } else {
         startButton.innerText = 'Restart';
         startButton.classList.remove('hide');
-        document.body.textContent = "Game Over!, please refresh the page to start again.";
+        document.body.textContent = "Quiz over!, please refresh the page to start again.";
     }  
 }
 
