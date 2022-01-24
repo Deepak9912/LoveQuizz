@@ -22,6 +22,8 @@ As per the introduction, when user clicks on correct answer, the screen will tur
 
 ![correct answer](https://user-images.githubusercontent.com/93731898/150696271-bea0e06a-9a43-41a2-a346-bf820b1871d8.PNG)
 
+Once the user has answered all the question, user will get a message "End of quizz!, please refresh the page to start again."
+
 ### Other Features
 1. All external links open in a new tab.
 2. HTML code is structured with sematic markup.
