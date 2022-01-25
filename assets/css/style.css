@@ -243,6 +243,10 @@ input[type="submit"]:active {
 
 /*media query section */
 @media screen and (min-width: 1200px) {
+
+  nav ul li{
+    font-size: 25px;
+  }
   .quiz-body {
     width: 80%;
     height: 50vh;
@@ -250,18 +254,22 @@ input[type="submit"]:active {
   }
 
   .btn {
-    font-size: 1.5rem;
+    font-size: 2rem;
     border-radius: 10px;
     padding: 5px 10px;
   }
 
   #question {
     font-size: 1.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
   }
 
   .scores {
     font-size: 22px;
+  }
+  .score-area {
+    margin-top: 4rem;
+    margin-bottom: -8rem;
   }
 
   footer {
