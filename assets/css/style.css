@@ -287,6 +287,10 @@ input[type="submit"]:active {
     height: 50vh;
   }
 
+  .score-area{
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+  }
   .scores {
     font-size: 20px;
   }
