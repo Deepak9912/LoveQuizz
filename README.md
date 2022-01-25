@@ -50,7 +50,7 @@ While creating two modals on the home screen for more info and feedback, i was n
 
 2. Restart the quiz:
 
-I wanted to restart the quiz on the home screen and tried to update score 0 variable but it didn't seem to work when i restarted the quiz, therefore i added document.body.textContent to the restart function. Now when the user restarts the function, a new window opens up with a text message End of quizz!, please refresh the page to start again.
+I wanted to restart the quiz on the home screen so that when the user restarts the quiz, the old score shoudld be set to 0. For that i tried to create a global variable and set it to score zero so that it increases with every correct answer and decreases the score when incorrect answer is picked, but it didn't seem to work when i restarted the quiz, therefore i added document.body.textContent to the restart function. Now when the user restarts the function, a new window opens up with a text message End of quizz!, please refresh the page to start again.Once user refresh the page, the quiz will start again.
 
 
 ## Validation checks
