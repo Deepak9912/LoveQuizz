@@ -91,10 +91,10 @@ nav ul li .close {
   cursor: pointer;
 }
 
-
 .score-area {
   text-align: center;
-  margin-top: 5rem;
+  margin-top: 3rem;
+  margin-bottom: -3rem;
 }
 
 .scores {
@@ -105,8 +105,8 @@ nav ul li .close {
 
 .quiz-body {
   display: flex;
-  width: 60vw;
-  height: 50vh;
+  width: 700px;
+  height: 650px;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -349,6 +349,9 @@ input[type="submit"]:active {
     grid-gap: 10px;
   }
 
+  .score-area{
+    margin-bottom: 1rem;
+  }
   .scores {
     display: inline-block;
     padding: 5px 10px;
