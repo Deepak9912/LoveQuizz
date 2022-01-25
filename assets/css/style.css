@@ -264,12 +264,12 @@ input[type="submit"]:active {
     margin-bottom: 2.5rem;
   }
 
+  .score-area{
+    margin-top: 6rem;
+    margin-bottom: -8rem;
+  }
   .scores {
     font-size: 22px;
-  }
-  .score-area {
-    margin-top: 4rem;
-    margin-bottom: -8rem;
   }
 
   footer {
