@@ -124,6 +124,7 @@ function hideStart(){
         startButton.innerText = 'Restart';
         startButton.classList.remove('hide');
         document.body.textContent = "Quiz over!, please refresh the page to start again.";
+        document.body.color = "red"
     }  
 }
 
