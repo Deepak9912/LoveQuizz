@@ -52,6 +52,7 @@ While creating two modals on the home screen for more info and feedback, i was n
 
 I wanted to restart the quiz on the home screen so that when the user restarts the quiz, the old score shoudld be set to 0. For that i tried to create a global variable and set it to score zero so that it increases with every correct answer and decreases the score when incorrect answer is picked, but it didn't seem to work when i restarted the quiz, therefore i added document.body.textContent to the restart function. Now when the user restarts the function, a new window opens up with a text message End of quizz!, please refresh the page to start again.Once user refresh the page, the quiz will start again.
 
+To set the scores for the quiz, i created two functions. one which increases the score for correct answer and one which increases the score for incorrect answer. I created a variable 'SCORE' in both the functions and assigned it to correct and incorrect answer from the DOM and added ++score in the innerText. Both the score functions were then added to setQuestion function which assings question to the user and it worked.
 
 ## Validation checks
 The webiste was tested on W3C to validate HTML AND CSS code structure.
