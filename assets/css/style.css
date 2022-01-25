@@ -388,8 +388,16 @@ input[type="submit"]:active {
     padding: 5px 10px;
   }
 
+  #form {
+    height: 60%;
+    width: 80%;
+    margin-top: 6rem;
+    padding: 20px;
+  }
+
   .scores {
     font-size: 18px;
     margin-top: 3rem;
   }
+
 }
