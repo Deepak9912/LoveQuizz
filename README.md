@@ -54,6 +54,13 @@ I wanted to restart the quiz on the home screen so that when the user restarts t
 
 To set the scores for the quiz, i created two functions. one which increases the score for correct answer and one which increases the score for incorrect answer. I created a variable 'SCORE' in both the functions and assigned it to correct and incorrect answer from the DOM and added ++score in the innerText. Both the score functions were then added to setQuestion function which assings question to the user and it worked.
 
+3. Multiple click options:
+
+When i finished the project, my colleague pointed out to that they are able to click on the option multiple times. I defined selctedBtn (event.target) and added hide class to all the buttons when i selectedBtn, this worked and i was able to hide other options.
+
+But using this, all the other answer options were hid, therefore i removed the hide class from all the buttons in my quizStart function and i was able to get a result i wanted. Now user is able to select only one answer and other options will be disabled once an answer is chosen.
+
+
 ## Validation checks
 The webiste was tested on W3C to validate HTML AND CSS code structure.
 
