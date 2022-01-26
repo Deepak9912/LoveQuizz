@@ -9,7 +9,7 @@ body {
   margin: 0;
   width: 100vw;
   height: 100vh;
-  background-color: aquamarine;
+  background-color: #faf6f6 ;
 }
 
 body.correct {
