@@ -121,3 +121,6 @@ The project was deployed through GitHub by following the below steps:
 5. Modal content was added using [W3Schools.com](https://www.w3schools.com/w3css/w3css_modal.asp)
 6. Script.js, line 43 code to shuffle the questions was adopted from [Stack OverFlow](https://stackoverflow.com/)
 7. Script.js, functions on line 69 and 75 were adopted using previous LoveMath project through [Code Institute](https://codeinstitute.net/ie/)
+
+## Special Thanks
+Special thanks to my mentor VVictor Miclovich, Slack Community, Kasia, Rebecca & Sean from tutor support for their assistance throughout this project.
