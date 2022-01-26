@@ -100,6 +100,11 @@ function setQuestion(questionParameter){
 /**this function will allow to select correct answer */
 function chooseAnswer(event){
     let selectedBtn = event.target;
+
+    if(selectedBtn){
+        answerElement.classList.add('hide');
+    }
+
     let correct = selectedBtn.dataset.correct;
     
     setClassStatus(document.body, correct);
