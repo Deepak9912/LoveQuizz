@@ -11,7 +11,6 @@ let answerElement = document.getElementById('answer-buttons');
 
 let shuffledQuestions, currentIndex;
 
-
 /**learnt to create modal from https://www.w3schools.com/w3css/w3css_modal.asp */
 /**modal window on the home page*/
 btn.onclick = function(){
@@ -60,6 +59,7 @@ function showNextQuestion(){
 /**function to reset the quiz */
 function resetQuiz(){
     nextButton.classList.add('hide');
+    answerElement.classList.remove('hide');
     while(answerElement.firstChild){
         answerElement.removeChild(answerElement.firstChild);
     }
@@ -100,13 +100,14 @@ function setQuestion(questionParameter){
 /**this function will allow to select correct answer */
 function chooseAnswer(event){
     let selectedBtn = event.target;
+    
 
     if(selectedBtn){
         answerElement.classList.add('hide');
     }
 
     let correct = selectedBtn.dataset.correct;
-    
+
     setClassStatus(document.body, correct);
     Array.from(answerElement.children).forEach(button => {
         setClassStatus(button, button.dataset.correct);
@@ -121,6 +122,9 @@ function chooseAnswer(event){
     hideStart();
 }
 
+
+
+
 /** this function helps to display restart button at the end of the quiz */
 function hideStart(){
     if(shuffledQuestions.length > currentIndex + 1){
@@ -129,9 +133,9 @@ function hideStart(){
         startButton.innerText = 'Restart';
         startButton.classList.remove('hide');
         document.body.textContent = "Quiz over!, please refresh the page to start again.";
-        document.body.color = "red"
     }  
 }
+
 
 /** function to check correct answer */
 function setClassStatus(element, correct){
