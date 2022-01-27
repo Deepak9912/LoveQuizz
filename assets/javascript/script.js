@@ -65,7 +65,7 @@ function resetQuiz(){
     }
 }
 
-/** used the below score element from love math project from code institute*/
+/** adopted the below score element from love math project from code institute*/
 /**score increment for correct answer */
 function incrementCorrectScore(){
     let score = document.getElementById('correct-score').innerText;
