@@ -132,13 +132,12 @@ function hideStart(){
     } else {
         startButton.innerText = 'Restart';
         startButton.classList.remove('hide');
-         /**document.body.textContent = "Quiz over!, please refresh the page to start again.";*/
         startButton.addEventListener('click', function(){
-               // location.reload();
-               //currentIndex = 0;
                document.body.classList.add('default');
-               document.body.classList.remove('correct' , 'incorrect');
+               document.body.classList.remove('correct','incorrect');
                quizStart();
+               //used location.reload as i was unable to set the scores to 0
+               location.reload();
             }) 
     }  
 }
