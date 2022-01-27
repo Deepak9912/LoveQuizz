@@ -132,7 +132,14 @@ function hideStart(){
     } else {
         startButton.innerText = 'Restart';
         startButton.classList.remove('hide');
-        document.body.textContent = "Quiz over!, please refresh the page to start again.";
+         /**document.body.textContent = "Quiz over!, please refresh the page to start again.";*/
+        startButton.addEventListener('click', function(){
+               // location.reload();
+               //currentIndex = 0;
+               document.body.classList.add('default');
+               document.body.classList.remove('correct' , 'incorrect');
+               quizStart();
+            }) 
     }  
 }
 

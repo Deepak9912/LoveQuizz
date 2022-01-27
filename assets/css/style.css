@@ -12,6 +12,10 @@ body {
   background-color: #e7decd;
 }
 
+body.default{
+  background-color: #e7decd;
+}
+
 body.correct {
   background: #0c80009e;
 }
