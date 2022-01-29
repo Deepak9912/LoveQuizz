@@ -2,7 +2,7 @@
 _________________________________
 LoveQuizz is an online quizz game which contains 10 questions. It is for general audience. User will click on start button on the screen to start the game,when user clicks on correct answer, the screen will turn green and for every incorrect score the screen will turn red. User can see the total score on the screen. Once all the questions has been answered by the user, restart button will appear and user can restart the quizz.
 
-The goal of the project is to create an online quiz which can interest the audience with general knowledge. There is feedback section as well where user can give a feedback about their experience.
+The goal of the project is to create an online quiz which can interest the audience with general knowledge. There is feedback section as well where user can give a feedback about the quiz.
 ![responsive quiz](https://user-images.githubusercontent.com/93731898/151250892-d330c66d-11ed-47fb-a2c4-2c2111848a2c.PNG)
 
 
@@ -10,27 +10,38 @@ Click here to visit the [LoveQuizz](https://deepak9912.github.io/LoveQuizz/) web
 
 ## Features
 
-The top right hand side navbar has more info navigation bar, which user can click to get more information about the quiz. Once user has read the instruction, user needs to click on x to close the window. 
+The top right hand side navbar has more info navigation bar, which user can click to get more information about the quiz. Once user has read the instruction, user can click on x to close the window. 
 ![modal](https://user-images.githubusercontent.com/93731898/151251284-c420bb3e-6cba-4460-abfa-98175468b149.PNG)
 
 
 There is a feedback section next to user-info, which user can use to give a feedback.
 ![feedback](https://user-images.githubusercontent.com/93731898/151251309-5b65e01d-516f-4bf3-85f8-72c24cdd5414.PNG)
 
-As per the introduction, when user clicks on correct answer, the screen will turn green and the score gets updated in the score area and vice versa for inforrect answer.
+As per the introduction, when user clicks on correct answer, the screen will turn green and the score gets updated in the score area and vice versa for incorrect answer.
 
 ![incorrect answer](https://user-images.githubusercontent.com/93731898/150696270-4f025ec0-7b33-43b6-8a57-00141dce3d3d.PNG)
 
 ![correct answer](https://user-images.githubusercontent.com/93731898/150696271-bea0e06a-9a43-41a2-a346-bf820b1871d8.PNG)
 
-Once the user has answered all the question, user will get a message "End of quizz!, please refresh the page to start again."
+Once the user has answered all the question, Restart button will appear to play the quiz again.
 
 ### Other Features
 1. All external links open in a new tab.
 2. HTML code is structured with sematic markup.
 3. The online quiz is responsive on different screens.
 
-## Design
+## User Experience
+As quiz developer, i would like
+1. uild an online quiz that user would find intersting to play
+2. Add navigation options to navigate the quiz easily
+3. Offer a quix that is enjoyable and challenging to the user.
+
+As user, i would like
+1. To be able to understand the main purpose of the game.
+2. To Be able to easily navigate throughout the game and choose a quiz to play.
+3. Be able to see my results after answering the questions.
+
+### Design
 Visual Design
 1. I have opted for the plain screen design, there is no background image.
 2. Used border radius property in CSS to give the square boxes a rounded edges.
@@ -89,6 +100,8 @@ The testing was done using the Google Chrome Browser. Chrome Developer Tools was
 ##### Apple iPad Mini (468px x 4024)
 ##### Apple iPhone X (375px x 812px)
 
+## Future Features
+I am planning to add a feedback section using modal, that way i remove the feedback page. I would also like to add categories for quiz, therefore users can have multiple quiz to choose from.
 
 ## Accessibility
 1. There are no images on the site.
