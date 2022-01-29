@@ -78,6 +78,18 @@ LightHouse
 JS Hint
 
 
+The testing was done using the Google Chrome Browser. Chrome Developer Tools was used extensively, particularly to check responsiveness on different screen sizes. Testing was also done using Firefox on desktop, and again on Google Chrome.
+
+1. Responsive on all device sizes between 500px - 1200px wide
+2. Devices tested on the following devices
+Samsung Galaxy Note 3 (360px x 640px)
+Samsung Galaxy S8 (360px x 740px)
+Samsung Galaxy S9+(320px x 658px)
+Pixel 3 (393px x 786px)
+Apple iPad Mini (468px x 4024)
+Apple iPhone X (375px x 812px)
+
+
 ## Accessibility
 1. There are no images on the site.
 2. Colours have a stark contrast between background and foreground.
