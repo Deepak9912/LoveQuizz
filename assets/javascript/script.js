@@ -1,7 +1,9 @@
+//Variables for modal
 let modal = document.getElementById('myModal');
 let btn = document.getElementById('myBtn');
 let span = document.getElementsByClassName("close")[0];
 
+//variables for questionnaire
 let questionContainer = document.getElementById('question-container');
 let startButton = document.getElementById('start-btn');
 let nextButton = document.getElementById('next-btn');
@@ -56,7 +58,7 @@ function showNextQuestion() {
     setQuestion(shuffledQuestions[currentIndex]);
 }
 
-/**function to reset the quiz */
+/**function to reset the quiz and new question from the questions variable*/
 function resetQuiz() {
     nextButton.classList.add('hide');
     answerElement.classList.remove('hide');
@@ -97,7 +99,7 @@ function setQuestion(questionParameter) {
     });
 }
 
-/**this function will allow to select correct answer */
+/**this function will allow to choose correct answer */
 function chooseAnswer(event) {
     let selectedBtn = event.target;
 
@@ -123,8 +125,6 @@ function chooseAnswer(event) {
 }
 
 
-
-
 /** this function helps to display restart button at the end of the quiz */
 function hideStart() {
     if (shuffledQuestions.length > currentIndex + 1) {
@@ -133,10 +133,11 @@ function hideStart() {
         startButton.innerText = 'Restart';
         startButton.classList.remove('hide');
         startButton.addEventListener('click', function () {
+            //below code will change the screen color to default
             document.body.classList.add('default');
             document.body.classList.remove('correct', 'incorrect');
             quizStart();
-            //used location.reload as i was unable to set the scores to 0
+            //used location.reload as i was unable to set the scores to 0 when restart
             location.reload();
         })
     }
@@ -154,8 +155,7 @@ function setClassStatus(element, correct) {
 }
 
 function clearClassStatus(element) {
-    element.classList.remove('correct');
-    element.classList.remove('incorrect');
+    element.classList.remove('correct', 'incorrect');
 }
 
 /** this variable holds the questions for the quiz */
