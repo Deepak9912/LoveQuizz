@@ -154,4 +154,4 @@ The project was deployed through GitHub by following the below steps:
 7. Script.js, functions on line 69 and 75 were adopted using previous LoveMath project through [Code Institute](https://codeinstitute.net/ie/)
 
 ## Special Thanks
-Special thanks to my mentor VVictor Miclovich, Slack Community, Kasia, Rebecca & Sean from tutor support for their assistance throughout this project.
+Special thanks to my mentor Victor Miclovich, Slack Community, Kasia, Rebecca & Sean from tutor support for their assistance throughout this project.
