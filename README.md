@@ -11,10 +11,12 @@ Click here to visit the [LoveQuizz](https://deepak9912.github.io/LoveQuizz/) web
 ## Features
 
 The top right hand side navbar has more info navigation bar, which user can click to get more information about the quiz. Once user has read the instruction, user can click on x to close the window. 
+
 ![modal](https://user-images.githubusercontent.com/93731898/151251284-c420bb3e-6cba-4460-abfa-98175468b149.PNG)
 
 
 There is a feedback section next to user-info, which user can use to give a feedback.
+
 ![feedback](https://user-images.githubusercontent.com/93731898/151251309-5b65e01d-516f-4bf3-85f8-72c24cdd5414.PNG)
 
 As per the introduction, when user clicks on correct answer, the screen will turn green and the score gets updated in the score area and vice versa for incorrect answer.
@@ -22,6 +24,7 @@ As per the introduction, when user clicks on correct answer, the screen will tur
 ![incorrect answer](https://user-images.githubusercontent.com/93731898/150696270-4f025ec0-7b33-43b6-8a57-00141dce3d3d.PNG)
 
 ![correct answer](https://user-images.githubusercontent.com/93731898/150696271-bea0e06a-9a43-41a2-a346-bf820b1871d8.PNG)
+
 
 Once the user has answered all the question, Restart button will appear to play the quiz again.
 
@@ -87,6 +90,7 @@ LightHouse
 ![LightHouse](https://user-images.githubusercontent.com/93731898/150697744-1337031b-2417-459c-bbb9-cab7d615e9fd.PNG)
 
 JS Hint
+![jshint](https://user-images.githubusercontent.com/93731898/151658768-124f5ae0-f846-45a7-a9e2-8b09f8bfab7d.PNG)
 
 
 The testing was done using the Google Chrome Browser. Chrome Developer Tools was used extensively, particularly to check responsiveness on different screen sizes. Testing was also done using Firefox on desktop, and again on Google Chrome.
